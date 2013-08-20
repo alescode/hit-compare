@@ -1,0 +1,54 @@
+<!doctype html>
+<html ng-app>
+    <head>
+        <title>vz.la facts</title>
+        <!-- Styles -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="css/stylesheet.css" rel="stylesheet" media="screen">
+        <script src="js/jquery.min.js"></script>
+        <script src="js/angular.min.js"></script>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+        <style type="text/css">
+            h4 {
+                text-align: left;
+            }
+            .discussion {
+                margin-bottom: 30px;
+            }
+            .comments {
+                margin-top: 10px;
+            }
+            #hide {
+                //visibility: hidden;
+            }
+        </style>
+        <script>
+            $(document).ready(function(){
+                $("#check_btn").click(function(){
+                    $("#hide").show();
+                });
+            });
+        </script>
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span8 offset1">
+                    <div class="hero-unit">
+                        <h1><a href="#">Hit compare</a></h1>
+                        <p></p>
+                        <p class="lead">Enter two words or phrases and find out which one the Gods of the Internet favor the most (i.e., which one has the most search engine results).</p>
+                    </div>
+                    <div>
+                        <input type="text" ng-model="text1" placeholder="word or phrase">
+                        <input type="text" ng-model="text2" placeholder="word or phrase">
+                        <button id="check_btn" type="submit">Check</button>
+                        <hr>
+                        <h1 id="hide">Between `{{text1}}` and `{{text2}}`, the most popular option is:</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

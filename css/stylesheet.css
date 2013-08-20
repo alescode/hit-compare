@@ -1,0 +1,35 @@
+body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+h2,h4 {
+    text-align: center;
+}
+.nav-section,.nav-section-active {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    min-height: 40px;
+    line-height: 40px;
+}
+.nav-section {
+    background-color: #eee;
+}
+.nav-section-active {
+    background-color: #1a9150;
+}
+.nav-section-active:hover {
+    background: #3cb371;
+}
+
+.rightcenter {
+    float:right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.rightcenter > a:hover {
+    text-decoration: none;
+}
